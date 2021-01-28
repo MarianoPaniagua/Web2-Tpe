@@ -1,11 +1,13 @@
 <?php
+require_once "DbUtils.php";
+
 class CommentaryModel
 {
     private $db;
 
     public function __construct()
     {
-        $this->db = new PDO(getenv("DB_DNS").';', getenv("DB_USER"), getenv("DB_PASS"));
+        $this->db =DbUtils::getDB();
     }
 
     public function getCommentaries($id_product){        

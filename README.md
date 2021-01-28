@@ -1,8 +1,5 @@
 # Web2-Tpe
 
-To test this page u have to install xampp
-Go to C://Xampp>>htdocs and clone this repo
-Then open ur browser and go to localhost
-Open phpMyAdmin and create a new data base called "thecave"
-import the data base u have in C://Xampp/htdocs//thecave.sql
-Then open in ur browser localhost/Web2-Tpe
+To test this page go to https://webtp2.herokuapp.com/. It is deployed using Heroku and Clever Cloud, so it will run slowly.
+Made with PHP, Smarty, HTML, CSS, JS, MySQL.
+This was part of the final project of one of the subjects of the university career.

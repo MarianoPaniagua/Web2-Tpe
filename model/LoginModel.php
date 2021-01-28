@@ -1,13 +1,14 @@
 <?php
+require_once "DbUtils.php";
+
 class LoginModel
 {
     private $db;
 
     public function __construct()
     {
-        $this->db = new PDO(getenv("DB_DNS").';', getenv("DB_USER"), getenv("DB_PASS"));
+        $this->db =DbUtils::getDB();
     }
-
 
     public function getUser($email){        
         $statement = $this->db->prepare("SELECT * FROM users WHERE email=?");
