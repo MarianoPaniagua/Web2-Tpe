@@ -7,7 +7,6 @@ class AdminModel
     public function __construct()
     {
         $this->db = new PDO(getenv("DB_DNS").';', getenv("DB_USER"), getenv("DB_PASS"));
-
     }
 
     public function getAllPurchases()
