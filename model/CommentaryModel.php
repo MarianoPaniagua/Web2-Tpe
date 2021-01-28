@@ -5,8 +5,8 @@ class CommentaryModel
 
     public function __construct()
     {
-        $this->db = new PDO(getenv("DB_HOST")
-        .getenv("DB_NAME").';charset=utf8', getenv("DB_USER"), getenv("DB_PASS"));
+        $this->db = new PDO(getenv("DB_DNS").';', getenv("DB_USER"), getenv("DB_PASS"));
+
     }
 
     public function getCommentaries($id_product){        
