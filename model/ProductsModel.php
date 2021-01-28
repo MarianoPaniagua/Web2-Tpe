@@ -6,6 +6,7 @@ class ProductsModel
 
     public function __construct()
     {
+        var_dump(getenv("DB_HOST"));
         $this->db = new PDO(getenv("DB_HOST")
         .getenv("DB_NAME").';charset=utf8', getenv("DB_USER"), getenv("DB_PASS"));
     }
